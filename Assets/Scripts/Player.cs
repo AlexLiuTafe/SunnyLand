@@ -32,6 +32,6 @@ public class Player : MonoBehaviour
         //Apply Gravity
         motion.y += gravity * Time.deltaTime;
         //Apply movement with motion
-        controller.move(transform.right * inputH * movementSpeed * Time.deltaTime);
+        controller.move(motion * Time.deltaTime);
     }
 }
